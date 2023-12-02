@@ -8,6 +8,13 @@ from datetime import datetime
 from pick import pick
 from time import sleep
 
+from src.loader import DataLoader
+
+# Initialize DataLoader
+data_loader = DataLoader()
+
+# Load data from a Slack channel
+slack_data = data_loader.load_slack_data("D/Hanna_File/Git_Repository/week0_starter_network_analysis/notebooks")
 
 
 # Create wrapper classes for using slack_sdk in place of slacker
